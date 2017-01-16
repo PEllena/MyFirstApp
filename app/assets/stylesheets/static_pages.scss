@@ -18,36 +18,44 @@ h1 {
 	letter-spacing: 0.05em;
 	font-family: monospace, sans-serif;
 }
+
 #menuMoris.navbar-default {
     font-size: 18px;
     background-color: rgba(143, 14, 81, 1);
     border-bottom-width: 0px;
 }
+
 #menuMoris.navbar-default .navbar-nav>li>a {
     color: rgb(255,255,255);
     background-color: rgba(143, 14, 81, 1);
 }
+
 #menuMoris.navbar-default .navbar-nav>li>a:hover,
 #menuMoris.navbar-default .navbar-nav>li>a:focus {
     color: rgb(255,255,255);
     background-color: rgb(0,0,0);
 }
+
 #menuMoris.navbar-default .navbar-nav>.active>a,
 #menuMoris.navbar-default .navbar-nav>.active>a:hover,
 #menuMoris.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(85, 85, 85, 1);
     background-color: rgba(255, 199, 199, 1);
 }
+
 #menuMoris.navbar-default .navbar-toggle {
     border-color: #ffc7c7;
 }
+
 #menuMoris.navbar-default .navbar-toggle:hover,
 #menuMoris.navbar-default .navbar-toggle:focus {
     background-color: #ffc7c7;
 }
+
 #menuMoris.navbar-default .navbar-toggle .icon-bar {
     background-color: #ffc7c7;
 }
+
 #menuMoris.navbar-default .navbar-toggle:hover .icon-bar,
 #menuMoris.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #8f0e51;
@@ -56,21 +64,16 @@ h1 {
 .work-img {
 	border-radius: 40px;
 	border: 15px solid rgba(143, 14, 81, 1);
-	display: inline-block;
-	margin-left: 40px;
+	padding: 20px;
+	margin-top: 20px;
 }
 
 .footer {
-	position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
     text-align: center;
     color: rgb(255,255,255);
 }
 
-p{
+p {
 	font-size: 20px;
 	color: rgb(255,255,255);
-
 }
