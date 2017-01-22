@@ -11,6 +11,9 @@ h1 {
 	padding: 40px;
 }
 
+h2 {
+	text-align: center;
+}
 #menuMoris.navbar-default .navbar-brand {
     color: rgb(255,255,255);
     font-size: 20px;
@@ -66,6 +69,11 @@ h1 {
 	border: 15px solid rgba(143, 14, 81, 1);
 	padding: 20px;
 	margin-top: 20px;
+}
+
+.product-img {
+	border-radius: 20px;
+	border: 7px solid rgba(143, 14, 81, 1);
 }
 
 .footer {
