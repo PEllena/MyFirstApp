@@ -7,11 +7,11 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner" role="listbox" id="hero">
   	<% @products.each do |product| %>
     <div class="item <%= " active" if product == @products.first %>">
       <%= image_tag(product.image_url) %>
-      <div class="carousel-caption">
+      <div class="carousel-caption" id="hero-name">
       	<%= product.name %>
       </div>
     </div>
