@@ -1,4 +1,4 @@
-<%= form_for(product) do |f| %>
+<%= bootstrap_form_for(product, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
   <% if product.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
@@ -11,32 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
+  <%= f.text_field :name %>
+  <%= f.text_area :description %>
+  <%= f.text_field :image_url %>
+  <%= f.text_field :colour %>
+  <%= f.number_field :price %>
+  <%= f.form_group do %>
+    <%= f.primary %>
+  <% end %>
 
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
 
-  <div class="field">
-    <%= f.label :image_url %>
-    <%= f.text_field :image_url %>
-  </div>
-
-  <div class="field">
-    <%= f.label :colour %>
-    <%= f.text_field :colour %>
-  </div>
-
-  <div class="field">
-    <%= f.label :price %>
-    <%= f.text_field :price %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

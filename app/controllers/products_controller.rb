@@ -3,8 +3,14 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
+  # Search form in the navigation bar
   def index
-    @products = Product.limit(3)
+    if params[:search]
+      search_term = params[:search]
+      @products = Product.search(search_term)
+    else
+      @products = Product.all
+    end
   end
 
   # GET /products/1
