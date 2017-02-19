@@ -1,107 +1,113 @@
 
 body {
-	background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 h1 {
-	font-family: monospace, sans-serif;
-	color: rgb(0, 0, 0);
-	text-align: center;
-	font-size: 3em;
-	padding: 40px;
+  font-family: monospace, sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 3em;
+  padding: 40px;
 }
 
 h2 {
-	text-align: center;
+  text-align: center;    
 }
+
 #menuMoris.navbar-default .navbar-brand {
-    color: rgb(255,255,255);
-    font-size: 20px;
-    font-weight: 700;
-	letter-spacing: 0.05em;
-	font-family: monospace, sans-serif;
+  color: rgb(255,255,255);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-family: monospace, sans-serif;
 }
 
 #menuMoris.navbar-default {
-    font-size: 20px;
-    background-color: rgba(143, 14, 81, 1);
-    border-bottom-width: 0px;
+  font-size: 20px;
+  background-color: rgba(143, 14, 81, 1);
+  border-bottom-width: 0px;
 }
 
 #menuMoris.navbar-default .navbar-nav>li>a {
-    color: rgb(255,255,255);
-    background-color: rgba(143, 14, 81, 1);
+  color: rgb(255,255,255);
+  background-color: rgba(143, 14, 81, 1);  
 }
 
 #menuMoris.navbar-default .navbar-nav>li>a:hover,
 #menuMoris.navbar-default .navbar-nav>li>a:focus {
-    color: rgb(255,255,255);
-    background-color: rgb(0,0,0);
+  color: rgb(255,255,255);
+  background-color: rgb(0,0,0);
 }
 
 #menuMoris.navbar-default .navbar-nav>.active>a,
 #menuMoris.navbar-default .navbar-nav>.active>a:hover,
 #menuMoris.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(85, 85, 85, 1);
-    background-color: rgba(255, 199, 199, 1);
+  color: rgba(85, 85, 85, 1);
+  background-color: rgba(255, 199, 199, 1);
 }
 
 #menuMoris.navbar-default .navbar-toggle {
-    border-color: #ffc7c7;
+  border-color: #ffc7c7;
 }
 
 #menuMoris.navbar-default .navbar-toggle:hover,
 #menuMoris.navbar-default .navbar-toggle:focus {
-    background-color: #ffc7c7;
+  background-color: #ffc7c7;
 }
 
 #menuMoris.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffc7c7;
+  background-color: #ffc7c7;
 }
 
 #menuMoris.navbar-default .navbar-toggle:hover .icon-bar,
 #menuMoris.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #8f0e51;
+  background-color: #8f0e51;
 }
 
 .work-img {
-	border-radius: 40px;
-	border: 15px solid rgba(143, 14, 81, 1);
-	padding: 20px;
-	margin-top: 20px;
+  border-radius: 40px;
+  border: 15px solid rgba(143, 14, 81, 1);
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .product-img {
-	border-radius: 20px;
-	border: 7px solid rgba(143, 14, 81, 1);
+  border-radius: 20px;
+  border: 7px solid rgba(143, 14, 81, 1);
+  display:block; 
+  height: 300px; 
+  width: 100%;
+}
+
+.image-box {
+  height: 500px;
 }
 
 .footer {
-    text-align: center;
-    color: rgb(0, 0, 0);
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
 p {
-	font-size: 20px;
-	color: rgb(0, 0, 0);
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
 
 #hero {
-    height: 90vh;
+  height: 90vh;  
 }
 
 #hero-name {
-    padding-bottom: 100px;
-    font-size: 2em;
-    color: rgb(0,0,0)
+  padding-bottom: 100px;
+  font-size: 2em;
+  color: rgb(0,0,0)
 }
 
-// navbar links //
+/* navbar links */
 li {
-    font-size: 1.5em;
+  font-size: 1.5em;  
 }
 
-/*.new-form {
-    width: 500px;
-}*/
+
 

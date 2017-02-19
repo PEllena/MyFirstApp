@@ -1,24 +1,37 @@
-<%= bootstrap_form_for(product, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
+<%= bootstrap_form_for(product, layout: :horizontal) do |f| %>
   <% if product.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
-
       <ul>
-      <% product.errors.full_messages.each do |message| %>
+        <% product.errors.full_messages.each do |message| %>
         <li><%= message %></li>
-      <% end %>
+        <% end %>
       </ul>
     </div>
   <% end %>
-
-  <%= f.text_field :name %>
-  <%= f.text_area :description %>
-  <%= f.text_field :image_url %>
-  <%= f.text_field :colour %>
-  <%= f.number_field :price %>
-  <%= f.form_group do %>
-    <%= f.primary %>
-  <% end %>
-
-
+  <div class="row">
+    <div class="col-xs-4, col-md-6">
+      <div class="form-group">
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.text_area :description, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.text_field :image_url, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.text_field :colour, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.number_field :price, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.form_group do %>
+          <%= f.primary %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  
 <% end %>
