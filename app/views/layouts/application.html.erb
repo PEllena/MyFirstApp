@@ -32,10 +32,19 @@
           <li><%= link_to "Contact Us", static_pages_contact_path %>
           </li>
         </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li>
+          <% if user_signed_in? %>
+            <%= link_to("Logout", destroy_user_session_path, :method => :delete) %>
+          <% else %>
+            <%= link_to("Login", new_user_session_path) %>
+          <% end %>
+          </li>
+        </ul>
         <div class="navbar-form navbar-right" role="search">
           <div class="form-group">
-            <%= form_tag("/products", method: "get", html: {class: 'form-group', id: "search-form"}) do %>            
-            <%= text_field_tag :search, params[:q], class: "form-control" %>
+            <%= form_tag("/products", method: "get", html: {class: "form-group", id: "search-form"}) do %>            
+            <%= text_field_tag(:q, nil, class: "form-control") %>
           </div>
             <%= submit_tag "Search", :name => nil, class: "btn btn-default" %>
           <% end %>
@@ -44,6 +53,7 @@
     </div>
   </div>
 
+  <p class="notice"><%= notice %></p>
 
   <%= yield %>
   

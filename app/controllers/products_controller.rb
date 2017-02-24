@@ -5,12 +5,12 @@ class ProductsController < ApplicationController
   # GET /products.json
   # Search form in the navigation bar
   def index
-    if params[:search]
-      search_term = params[:search]
+    if params[:q]
+      search_term = params[:q]
       @products = Product.search(search_term)
     else
       @products = Product.all
-    end
+    end  
   end
 
   # GET /products/1
