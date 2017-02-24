@@ -109,5 +109,44 @@ li {
   font-size: 1.5em;  
 }
 
+/*login page*/
+.panel-login {
+  border-color: rgba(143, 14, 81, 1);
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);
+  box-shadow:  0px 2px 3px 0px rgba(0,0,0,0.5);
+}
 
+.panel-login>.panel-heading h2 {
+  color: rgba(143, 14, 81, 1);
+}
 
+.panel-login>.panel-body
+#user_email,
+#user_password,
+#user_password_confirmation {
+  height: 45px;
+}
+
+.btn-login {
+  background-color: #59B2E0;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #59B2E6;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+  color: #fff;
+  background-color: #53A3CD;
+  border-color: #53A3CD;
+}
+
+.form-links {
+  text-decoration: underline;
+}
