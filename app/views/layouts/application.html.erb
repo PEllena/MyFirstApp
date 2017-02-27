@@ -53,7 +53,13 @@
     </div>
   </div>
 
-  <p class="notice"><%= notice %></p>
+  <% if notice %>
+    <div id="notice" class="alert alert-warning" role="alert"><%= notice %></div>
+  <% end %>
+
+  <% if alert %>
+    <div class="alert alert-danger" role="alert"><%= alert %></div>
+  <% end %>
 
   <%= yield %>
   
@@ -63,4 +69,8 @@
 	</footer>
 
   </body>
+
+  <script type="text/javascript">
+    setTimeout("$('.alert').fadeOut('slow')", 3000)
+  </script>
 </html>
