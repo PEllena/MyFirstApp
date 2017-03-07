@@ -9,6 +9,7 @@
         <%= image_tag(@product.image_url, class:"product-img img-responsive")%>
         <p><%= render partial: "new_comment" %></p>
         <p><%= render partial: "comments" %></p>
+        <%= will_paginate @comments %>
       </div>
     </div>
 
