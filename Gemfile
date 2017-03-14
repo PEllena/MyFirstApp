@@ -45,13 +45,13 @@ gem 'will_paginate', '~> 3.1.1'
 
 gem 'rails-controller-testing'
 
-
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
+  #Factories are simple classes which can generate all kinds of data for your various tests.
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :development do
