@@ -19,7 +19,13 @@
         <p><strong>Description:</strong> <%= @product.description %></p>
         <p><strong>Colour:</strong> <%= @product.colour %></p>
         <p><strong>Price:</strong> <%= @product.price %> $</p>
-        <p class="rated" data-score="<%= @product.average_rating %>"><strong>Average Rating: </strong></p>
+        <p><strong>Average Rating:</strong></p>
+        <p class="rated" data-score="<%= @product.average_rating %>"></p>
+        <p>
+          <%= form_tag "/payments/create" do %>
+            <%= render partial: "shared/stripe_checkout_button" %>
+          <% end %>
+        </p>
       </div>
     </div>
   </div>
