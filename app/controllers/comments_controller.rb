@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
 	
 	def create
 		@product = Product.find(params[:product_id])
+		byebug
 	  @comment = @product.comments.new(comment_params)
 	  @comment.user = current_user
 	  respond_to do |format|

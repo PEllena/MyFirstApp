@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    logger.debug "A list of all users"
   end
 
   # GET /users/1
