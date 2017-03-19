@@ -6,7 +6,7 @@
     <div class="col-xs-12 col-sm-6 col-md-8">
       <div class="thumbnail">
         <h2><%= @product.name %></h2>
-        <%= image_tag(@product.image_url, class:"product-img img-responsive")%>
+        <%= image_tag(@product.image_url, class:" img-zoom product-img img-responsive", data_zoom_image: "@product.image_url")%>
         <p><%= render partial: "new_comment" %></p>
         <p><%= render partial: "comments" %></p>
         <%= will_paginate @comments %>
