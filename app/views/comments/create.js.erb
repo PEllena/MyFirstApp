@@ -1,0 +1,4 @@
+// Hide the comment form after user submits his comment.
+$("#new_comment").html("<h3>Thank you for your review!</h3>");
+$(".product-reviews").prepend("<%= j render @comment %>")
+$("#average-rating").attr('data-score', "<%= @product.average_rating %>")
