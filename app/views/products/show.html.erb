@@ -26,11 +26,13 @@
             <%= render partial: "shared/stripe_checkout_button" %>
             <%= hidden_field_tag(:product_id, @product.id) %>
           <% end %>
+        <p><strong>Views: <span class="badge"><%= @product.views %></span></strong></p>
         </p>
       </div>
     </div>
   </div>
 </div>
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
