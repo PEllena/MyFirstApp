@@ -55,4 +55,7 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   default_url_options
+
+  # This tells the rails generator to generate plain JavaScript files instead of CoffeeScript files.
+  config.app_generators.javascript_engine = :javascript
 end

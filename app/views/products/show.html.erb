@@ -8,6 +8,7 @@
         <h2><%= @product.name %></h2>
         <%= image_tag(@product.image_url, class:" img-zoom product-img img-responsive", data_zoom_image: "@product.image_url")%>
         <p><%= render partial: "new_comment" %></p>
+        <p class="alert alert-info" style="display:none" role="alert">A new comment was posted!</p>
         <p><%= render partial: "comments" %></p>
         <%= will_paginate @comments %>
       </div>

@@ -23,6 +23,9 @@ Rails.application.routes.draw do
 
   get 'payments/create'
 
+  #  It will run ActionCable within the same process as the rest of the app
+  mount ActionCable.server => '/cable'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
