@@ -8,7 +8,22 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
   },
 
   received: function(data) {
-    // Called when there's incoming data on the websocket for this channel
+  	// Called when there's incoming data on the websocket for this channel
     $(".alert.alert-info").show();
+    $('.product-reviews').prepend(data.comment);
+  	$("#average-rating").attr('data-score', data.average_rating);
+  	refreshRating();
+
+  },
+
+  listen_to_comments: function() {
+  	return this.perform('listen', {
+  		product_id: $("[data-product-id]").data("product-id")
+  	});
   }
+});
+
+// This will make sure listen_to_comments() is called every single time the user loads a new page
+$(document).on('turbolinks:load', function() {
+  App.product.listen_to_comments();
 });
