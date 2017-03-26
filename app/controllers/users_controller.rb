@@ -7,7 +7,6 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-    logger.debug "A list of all users"
   end
 
   # GET /users/1
@@ -31,6 +30,9 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        # Tell the UserMailer to send a welcome Email after save
+        UserMailer.welcome_email(@user).deliver
+        
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else

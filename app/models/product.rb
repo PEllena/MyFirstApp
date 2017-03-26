@@ -5,7 +5,7 @@ class Product < ApplicationRecord
   
   validates :name, presence: true
   validates :description, presence: true
-  validates :image_url, presence: true
+  validates :image_url, presence: true, format: { with: %r{.(gif|jpg|png)\Z}i, message: 'must be a URL for GIF, JPG or PNG image.' }
   validates :colour, presence: true
   validates :price, numericality: { only_integer: true }
 
