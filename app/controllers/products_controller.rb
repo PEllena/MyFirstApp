@@ -79,6 +79,7 @@ class ProductsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+    # This method acts as a whitelist filter for data that gets saved into the database
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
