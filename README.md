@@ -1,6 +1,5 @@
 # README
-
-Hello! My name is Elena and I am studying webdevelopment. This is my first web application.
+This is an e-commerce platform I have built using Ruby on Rails during a full-stack web development course at CareerFaundry.
 
 Things you may want to cover:
 
